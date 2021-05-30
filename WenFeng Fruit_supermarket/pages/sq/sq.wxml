@@ -1,0 +1,16 @@
+<!--pages/sq/sq.wxml-->
+<view >
+  <view class="head"><span>{{label}}</span></view>
+  <view class="header">
+    <image src='../../icons/weixin.png'></image>
+    </view>
+    <view class="content">
+      <view>申请获取以下权限</view>
+      <text>获得你的公开信息(昵称,头像等)</text>
+    </view>
+    <button class="bottom" type="primary" open-type="getuerinfo" bindtap="login">
+    授权登录  
+    </button>
+</view>
+
+ 

@@ -1,0 +1,4 @@
+<!--components/page_head/page_head.wxml-->
+<view >
+ <view class="head"><span>{{label}}</span></view>
+</view>

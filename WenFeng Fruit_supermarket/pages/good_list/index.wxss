@@ -1,0 +1,205 @@
+/* pages/goood_list/index.wxss */
+page{
+  background-color: rgb(240,240,240);
+}
+.head{
+  width: auto;
+  height: 100rpx;
+  background-color: rgb(255,120,0);
+  text-align: center;
+}
+.head span{
+  font-size: 34rpx;
+  font-weight: 500;
+  color:white;
+  position: relative;
+  top:57rpx;
+}
+.backgound_information::after{
+  content: "";
+  width: auto;
+  background-color: red;
+  display: block;  
+  height: 280rpx;
+  background-image: linear-gradient(rgb(255,120,0),rgb(240,240,240));
+}
+.position_1{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.position{
+margin: 0px auto;
+width:650rpx;
+height:150rpx;
+background-color: white;
+/* display: flex;
+flex-direction: row; */
+position: absolute;
+top:150rpx;
+border-radius:15rpx;
+}
+.position image,span{
+  color: rgb(254,127,14);
+}
+.position image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.position span{
+  padding: 3rpx;
+  padding-right:2rpx ;
+  line-height: 40rpx;
+  color:grey;
+  font-weight: 200;
+  width: auto;
+}
+.pos{
+  margin: 20rpx;
+  margin-bottom: 10rpx;
+  display: flex;
+  align-items: center;
+  height: 40rpx;
+}
+.pos span{
+  font-size: 31rpx;
+  color:rgb(254,127,14);
+}
+.good_list{
+  position: relative;
+  top: 10rpx;
+}
+.aside_left{
+  display: inline-block;
+  position: absolute;
+  top:10rpx;
+  width: 150rpx;
+  height: 880rpx;
+  background: rgb(255,255,255);
+  border-radius: 30rpx;
+  margin-right: 30rpx;
+}
+
+.aside_left view{
+  border-radius: 10rpx;
+  font-size: 28rpx;
+  color:grey;
+  background: rgb(255,255,255);
+  padding: 3rpx;
+  width: 150rpx;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#good_total{
+  position: relative;
+  top: -70rpx;
+  width:650rpx;
+  margin: 0 auto;
+}
+#content{
+  width:100vw;
+  text-align: center;
+}
+#xuanchuan{
+  border-radius:80rpx;
+  display: block;
+  position: relative;
+  top: -10rpx;
+  width: 650rpx;
+  height: 250rpx;
+  margin: 0 auto;
+}
+.aside_left .active{
+  color: rgb(254,127,14);
+  background: rgba(255,240,229);
+  /* background-color: rgba(254,127,14,0.7); */
+}
+.good_list{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 0rpx;
+  border-radius: 10rpx;
+  display: inline-block;
+  width:470rpx;
+  background-color: rgb(255,255,255);
+  height: 880rpx;
+}
+
+.good_list .type{
+  color:black;
+  margin:0 auto;
+  display: block;
+  background-color: rgb(240,240,240);
+  width: 400rpx;
+  margin-top: 20rpx;
+  padding: 10rpx;
+  border-radius: 10rpx;
+}
+
+.good_list image{
+  width:200rpx;
+  height:185rpx;
+}
+.scrollclass{
+  height: 800rpx;
+}
+.good_inf{
+  padding: 30rpx;
+  position: relative;
+  height: 225rpx;
+}
+.good_inf span{
+  width: 230rpx;
+  position: absolute;
+  margin-top: 10rpx;
+  padding: 15rpx;
+  color: black;
+  font-weight: 500;
+}
+.good_inf text{
+position: absolute;
+margin-left: 15rpx;
+top:170rpx;
+color:red;
+font-weight: 400;
+}
+.good_inf .image_set image{
+  width: 38rpx;
+  height: 35rpx;
+}
+.good_inf .image_set .add{
+  float:right;
+}
+.good_inf .image_set .jian{
+  float: left;
+}
+.mores{
+  width: auto;
+  display: flex;
+  margin-top: 40rpx;
+  justify-content: center;
+}
+.mores text{
+  margin: 0 auto;
+  color: grey;
+  background: rgb(255,255,255);
+}
+.image_set{
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  bottom:0rpx;
+  right: 10rpx;
+  height: 50rpx;
+justify-content: center;
+align-items: center;
+}
+.image_set text{
+  position: relative;
+  right: 5rpx;
+  color: black;
+  top:0rpx;
+}

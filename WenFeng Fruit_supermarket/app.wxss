@@ -1,0 +1,13 @@
+/**app.wxss**/
+page,view,text,swiper,swiper-item,image,navigator{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+   
+}
+
+
+page{
+  --themeColor:#FF6437;
+  font-size: 28rpx;
+}

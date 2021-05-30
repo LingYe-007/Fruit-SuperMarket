@@ -1,0 +1,47 @@
+/* pages/mine/index.wxss */page{
+  background-color: rgb(240,240,240);
+}
+.head{
+  width: auto;
+  height: 140rpx;
+  background-color: rgb(255,255,255);
+  text-align: center;
+}
+.head image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.black {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top:80rpx;
+}
+.black image{
+  position: absolute;
+  left: 20rpx;
+}
+.shouji{
+  border-bottom: solid 3rpx grey;
+  font-size: 32rpx;
+  padding: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.shouji input{
+  display: block;
+  margin-left: 30rpx;
+}
+.cs{
+  display: flex;
+  justify-content: center;
+}
+.cs text{
+  padding: 10rpx 20rpx;
+  margin-top:100rpx ;
+  color: white;
+  background: rgb(6,192,95);
+  border-radius: 10rpx;
+}

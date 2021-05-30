@@ -1,0 +1,194 @@
+page{
+  background-color: rgb(240,240,240);
+}
+.containter span{
+  position: absolute;
+  top:0rpx;
+  font-size: 28;
+  font-weight: bold;
+}
+
+.backgound_information::after{
+  content: "";
+  width: auto;
+  background-color: red;
+  display: block;  
+  height: 200rpx;
+  background-image: linear-gradient(rgb(255,120,0),rgb(240,240,240));
+}
+.block_index{
+  position: relative;
+  top: -250rpx;
+  width: 88vw;
+  left: 6vw;
+  height: 400rpx;
+  border-radius: 20rpx;
+  background-color: rgb(255,255,255);
+}
+
+.block_index image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 10rpx;
+  margin-left: 60rpx;
+  margin-top: 50rpx;
+}
+.block_index span{
+  font-size: 32rpx;
+  font-weight: 500;
+  width: 250rpx;
+  margin-left: 50rpx;
+  height: 50rpx;
+  position: relative;
+  top: -84rpx;
+}
+.block_index #txt2{
+  font-size: 25rpx;
+  font-weight: 450;
+  color:white;
+  background-color:rgb(250,120,0) ;
+  padding: 7rpx;
+  border-radius: 10rpx;
+}
+.block_index #txt3{
+  margin-top: 15rpx;
+  margin-left: 223rpx;
+  width: 300rpx;
+  display: block;
+  font-size: 25rpx;
+  color:grey;
+}
+.sound_speak image{
+  background-color: rgb(255,255,255);
+  margin: 0px;
+  
+  width: 40rpx;
+  height: 40rpx;
+}
+.sound_speak{
+  position: relative;
+  top: -30rpx;
+  left: 30rpx;
+  width: 95%;
+  background-color: rgb(255,255,255);
+}
+.sound_speak text{
+  white-space: nowrap;
+  font-size: 28rpx;
+}
+.nn {
+  background-color:white ;
+  display:inline-block;
+  width: 88%;
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 28rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  animation: marquee 30s linear infinite;
+}
+@keyframes marquee {
+  0%   { text-indent: 27.5em }
+  100% { text-indent: -105em }
+}
+.formore{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+.formore view , image,navigator,text{
+  background-color: white;
+}
+
+.formore view{
+  justify-content:center;
+  display: flex;
+  flex-direction: column-reverse;
+  display: inline-block;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+}
+.formore image{
+  justify-content:center;
+  margin:0rpx;
+  height: 60rpx;
+  width: 60rpx;
+}
+.formore text{
+    color: grey;
+  font-size: 30rpx;
+  font-weight: 500;
+  justify-content:center;
+}
+.recommend{
+  position: relative;
+  top:-200rpx;
+  text-align: center;
+}
+.recommend image{
+  margin: 0;
+  width: 250rpx;
+  height:80rpx;
+}
+.recommend_good{
+  position: relative;
+  top:-150rpx;
+  border-radius: 20rpx;
+  left:6vw;
+  width: 88vw;
+  min-height: 400rpx;
+  background-color: rgb(240,240,240);
+}
+.recommend_good image{
+  border-radius: 3rpx;
+  width: 280rpx;
+  height: 280rpx;
+  margin-top: 20rpx;
+}
+.ran_list{
+  position: relative;
+  display: flex;
+  margin: 10rpx;
+  display:inline-block;
+  /* align-content: center; */
+  background-color: rgb(255,255,255);
+  width: 300rpx;
+  height: 410rpx;
+  text-align: center;
+  /* padding: 10rpx; */
+  border-radius: 20rpx;
+}
+.recommend_good span{
+  display: block;
+  width: 300rpx;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.mores{
+  margin-top: -60rpx;
+  width: auto;
+  display: flex;
+}
+.recommend_good  text{
+  position: absolute;
+  bottom: 20rpx;
+  left: 30rpx;
+  /* background:white;
+  color: red; */
+  color: red;
+  display: block;
+}
+.mores text{
+  margin: 0 auto;
+  color: grey;
+  background: rgb(240,240,240);
+}
+.recommend_good .buy{
+  position: absolute;
+  bottom: 20rpx;
+  right: 40rpx;
+  width: 40rpx;
+  height: 40rpx;
+}

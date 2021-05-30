@@ -1,0 +1,42 @@
+<!--pages/user/index.wxml-->
+<view >
+<!-- 小背景 -->
+ <view class="head"><span>{{label}}</span></view>
+ 
+ <view class="backgound_information"></view>
+ <!-- 人物信息 -->
+ <view class="user_info">
+  <text>Hi~{{nickname}}</text>
+   <image src="{{avatarUrl}}" class="user"></image>
+ </view>
+ </view>
+ <!-- 订单页面 -->
+ <view class="order">
+   <view class="quit">
+    <image src="../../icons/ord.png" class="ord"></image>
+    <text class="order1">订单</text>
+    <span bindtap="goTo">全部订单></span>
+    </view>
+    <!-- 订单小图标 -->
+    <view class="ten">
+    <view class="image_list" wx:for="{{images_list}}">
+      <image src="{{item.icon}}"></image>
+      <text>{{item.text}}</text>
+    </view>
+    </view>
+    <!-- 地址管理 -->
+    <view class="address">
+      <view class="add" wx:for="{{address_list}}" id="{{item.url}}">
+        <image src="{{item.icon}}"></image>
+        <text>{{item.text}}</text>
+        <span>></span>
+      </view>
+    </view>
+ </view>
+<!-- <image class="logo" src="{{userInfo.avatarUrl}}"></image>
+<button bindtap="getOpenIdTap">获取用户唯一标识openid</button>  
+openid:{{openid}}session_key:{{session_key}}
+ 
+ 
+<button bindtap="getCodeTap">获取CODE</button>  
+code:{{code}} -->

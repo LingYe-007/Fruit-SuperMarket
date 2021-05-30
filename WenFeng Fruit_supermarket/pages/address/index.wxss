@@ -1,0 +1,74 @@
+/* pages/address/index.wxss */
+page{
+  background-color: rgb(240,240,240);
+}
+.head{
+  width: auto;
+  height: 140rpx;
+  background-color: rgb(255,255,255);
+  text-align: center;
+}
+.head image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.black{
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 70rpx;
+  left: 40rpx;
+}
+.content{
+  min-height: 400rpx;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+.content image{
+  height: 400rpx;
+}
+.add{
+  padding: 20rpx;
+  position: fixed;
+  width: 100vw;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  padding: 20rpx;
+  background: white;
+}
+.add span{
+  font-size: 40rpx;
+  font-weight: 500;
+  display: block;
+  color: rgb(250,120,0);
+}
+.addcontent{
+  width: 600rpx;
+  height: 200rpx;
+  margin: 0 auto;
+  background-color: white;
+  margin-top: 40rpx;
+  margin-bottom: 10rpx;
+  border-radius: 20rpx;
+  color: grey;
+  position: relative;
+}
+.addcontent .name{
+  position: absolute;
+  top: 30rpx;
+  left: 30rpx;
+  font-size: 36rpx;
+}
+.addcontent .phone{
+  position: absolute;
+  font-size: 36rpx;
+  top: 30rpx;
+  left: 200rpx;
+}
+.addcontent .address{
+  position: absolute;
+  top: 100rpx;
+  left: 30rpx;
+}

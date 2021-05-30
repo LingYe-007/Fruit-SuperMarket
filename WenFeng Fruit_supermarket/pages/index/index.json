@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "search_input":"../../components/search_input/search_input",
+    "page_head":"../../components/page_head/page_head"}
+}

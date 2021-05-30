@@ -1,0 +1,42 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 小标题 -->
+  <!-- 引入首页背景组件 -->
+  <page_head></page_head>
+  <!--商铺信息展示 -->
+  <view class="backgound_information"></view>
+  <view class="block_index">
+  <image src="../../icons/id_image.jpeg"></image>
+  <span id="txt1">慧慧水果超市</span>
+  <span id="txt2">{{status}}</span>
+  <span id="txt3">{{notice_inf[1].content}}</span>
+  <!-- 通告小模块 -->
+  <view class="sound_speak"  >
+    <image src="../../icons/Lingdang.png"></image>
+    <view class="nn" animation="{{animationData}}">{{notice_inf[2].content}}</view>
+  </view>
+  <!-- 三个小图标 -->
+  <view class="formore">
+    <view wx:for="{{images_list}}" key="--index">
+      <navigator url="{{item.url}}"><image class="images" src="{{item.icon}}" ></image></navigator>
+      <text>{{item.text}}</text>
+    </view>
+  </view>
+  </view>
+  <!-- 推荐图标 -->
+  <view class="recommend">
+    <image src="../../icons/recommend.png"></image>
+  </view>
+  <!-- 推荐商品 -->
+  <view class="recommend_good">
+      <view wx:for="{{ramdom}}" class="ran_list">
+      <image src="{{item.image}}"> </image>
+      <span>{{item.name}}</span>
+      <text>￥{{item.price}}</text>
+      <image class="buy" src="../../icons/shopcart.png" bindtap="add"></image>
+  </view>
+</view>
+<view class="mores">
+  <text>·没有更多·</text>
+  </view>
+</view>

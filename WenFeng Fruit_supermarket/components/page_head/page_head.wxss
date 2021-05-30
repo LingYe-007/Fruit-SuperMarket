@@ -1,0 +1,15 @@
+/* components/page_head/page_head.wxss */
+.head{
+  width: auto;
+  height: 200rpx;
+  background-color: rgb(255,120,0);
+  text-align: center;
+}
+.head span{
+  font-size: 37rpx;
+  font-weight: bold;
+  color:white;
+  position: relative;
+  top:57rpx;
+}
+

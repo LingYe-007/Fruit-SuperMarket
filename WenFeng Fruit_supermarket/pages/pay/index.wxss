@@ -1,0 +1,7 @@
+/* pages/pay/index.wxss */
+.head{
+  width: auto;
+  height: 150rpx;
+  background-color: rgb(255,120,0);
+  text-align: center;
+}

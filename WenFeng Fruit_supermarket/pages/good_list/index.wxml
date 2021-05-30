@@ -1,0 +1,49 @@
+<!--pages/goood_list/index.wxml-->
+<view class="content" >
+<!-- 小背景 -->
+ <view class="head"><span>{{label}}</span></view>
+ <view class="backgound_information"></view>
+<!-- 获取人的所在地 -->
+<view class="position_1">
+<view class="position">
+<view class="pos">
+<image src="../../icons/position.png"></image>
+<span>{{address}}</span>
+</view>
+<!-- <span>{{position}}</span> -->
+<search_input></search_input> 
+</view>
+</view>
+<!-- <view id="content">
+  <image src="../../icons/xuanchuan.png" id="xuanchuan"></image>
+</view> -->
+<!-- 商品合集 -->
+<view id="good_total">
+  <view class="aside_left">
+  <block wx:for="{{typelist}}" wx:key='key' class='block'>
+  <view class="{{index == id ? 'active':'no'}}" bindtap="switchClass" data-index="{{index}}">{{item}}</view>
+  </block>
+  </view>
+  <view class="good_list">
+    <span class="type">{{typelist[id]}}</span>
+    <scroll-view class="scrollclass" scroll-y="true" >
+    <block wx:for="{{goodlist}}" wx:for-item="items" wx:key='key'>
+    <view class="good_inf">
+    <image src="{{items.image}}"></image>
+    <span>{{items.name}}</span>
+    <text>￥{{items.price}}</text>
+    <view class="image_set">
+    <image class="jian" src="../../icons/jian.png" wx:if="{{items.number}}" id="{{items.id}}" bindtap="jian"></image>
+    <text>{{items.number}}</text>
+    <image id="{{items.id}}" class="add" src="../../icons/add.png" bindtap="add"></image>
+    </view>
+    </view>
+    </block>
+    <view class="mores">
+  <text>·没有更多·</text>
+  </view>
+      </scroll-view>
+
+  </view>
+</view>
+</view>

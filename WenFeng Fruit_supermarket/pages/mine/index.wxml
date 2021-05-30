@@ -1,0 +1,21 @@
+<!--pages/mine/index.wxml-->
+<view class="head"><view class="black" bindtap="back"><image src="../../icons/arrow.png" ></image><span>{{label}}</span></view></view>
+<view class="content">
+  <view class="shouji">
+  <text>收货人</text>
+  <input placeholder="姓名" value="{{name}}" bindblur="name"></input>
+  </view>
+  <view class="shouji">
+    <text>手机号码</text>
+    <input placeholder="11位手机号" value="{{phone}}" bindblur="phone"></input>
+    </view>
+  <view class="shouji">
+    <text>地区信息</text>
+    <input placeholder="地区信息" value="{{address}}" bindblur="address"></input>
+  </view> 
+  <view class="shouji">
+    <text>详细地址</text>
+     <input placeholder="街道门派信息" value="{{add_inf}}" bindblur="add_inf"></input>
+</view>
+<view class="cs" bindtap="ctrl_s"><text>保存</text></view>
+</view>

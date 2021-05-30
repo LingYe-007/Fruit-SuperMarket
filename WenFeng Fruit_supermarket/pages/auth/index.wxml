@@ -1,0 +1,5 @@
+<!--pages/auth/index.wxml-->
+<view class="head"><span>{{label}}</span></view>
+<view>
+
+</view>

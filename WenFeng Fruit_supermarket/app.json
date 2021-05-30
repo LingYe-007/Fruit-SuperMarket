@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/sq/sq",
+    "pages/index/index",
+    "pages/auth/index",
+    "pages/user/index",
+    "pages/address/index",
+    "pages/mine/index",
+    "pages/order/index",
+    "pages/cart/index",
+    "pages/good_list/index",
+    "pages/search/index",
+    "pages/pay/index",
+    "components/search_input/search_input",
+    "components/page_head/page_head"
+  ],
+  "window": {
+    "navigationStyle": "custom",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FF6437",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#696969",
+    "selectedColor": "#FF6437",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "门店首页",
+        "iconPath": "./icons/index_0.png",
+        "selectedIconPath": "./icons/index_1.png"
+      },
+      {
+        "pagePath": "pages/good_list/index",
+        "text": "点单页面",
+        "iconPath": "./icons/good_list_0.png",
+        "selectedIconPath": "./icons/good_list_1.png"
+      },
+      {
+        "pagePath": "pages/order/index",
+        "text": "我的订单",
+        "iconPath": "./icons/order_0.png",
+        "selectedIconPath": "./icons/order_1.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "个人信息",
+        "iconPath": "./icons/user_0.png",
+        "selectedIconPath": "./icons/user_1.png"
+      }
+    ]
+  },
+  
+"permission":{
+  "scope.userLocation":{
+      "desc":"小程序需要获取你的位置信息"
+  }
+},
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

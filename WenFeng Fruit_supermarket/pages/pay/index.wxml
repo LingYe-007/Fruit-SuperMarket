@@ -1,0 +1,2 @@
+<!--pages/pay/index.wxml-->
+<view class="head"><span>{{label}}</span></view>

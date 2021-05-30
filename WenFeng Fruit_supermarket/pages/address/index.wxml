@@ -1,0 +1,12 @@
+<!--pages/address/index.wxml-->
+<view class="head"><view class="black" bindtap="back"><image src="../../icons/arrow.png" ></image><span>{{label}}</span></view></view>
+<view class="content"  wx:if="{{active}}">
+<image src="../../icons/shangpin.png" class="{{active}}" >
+</image>
+</view>
+<view wx:for="{{myaddress}}" class="addcontent" bindtap="choose" data-index="{{index}}">
+    <text class="name" id="{{item.name}}">{{item.name}}</text>
+    <text class="phone" id="{{item.phone}}">{{item.phone}}</text>
+    <span class="address" id="{{item.address}}">{{item.address}}{{item.add_inf}}</span> 
+</view>
+<view class="add" bindtap="addaddress"><span>+添加地址</span></view>

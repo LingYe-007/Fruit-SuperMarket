@@ -1,0 +1,13 @@
+/* pages/auth/index.wxss */
+.head{
+  width: auto;
+  height: 120rpx;
+  background-color: rgb(255,120,0);
+  text-align: center;
+}
+.head span{
+  margin: 0 auto;
+  position: relative;
+  top:60rpx;
+  color: white; 
+}
